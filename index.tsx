@@ -12,6 +12,4 @@ if (container) {
       <App />
     </React.StrictMode>
   );
-} else {
-  console.error("Falha ao encontrar o elemento root para montar a aplicação.");
 }
