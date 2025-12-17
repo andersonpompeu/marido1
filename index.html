@@ -1,14 +1,35 @@
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" style="display: block !important;">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marido de Aluguel Maringá - Consertos Profissionais</title>
+    
+    <!-- SEO Básico -->
+    <title>Marido de Aluguel Maringá | Consertos e Reparos Profissionais</title>
+    <meta name="description" content="Serviços profissionais de marido de aluguel em Maringá. Elétrica, hidráulica, montagem de móveis e reparos em geral com garantia e preço justo." />
+    <meta name="keywords" content="marido de aluguel maringá, eletricista maringá, encanador maringá, montador de moveis maringá, reformas maringá" />
+    <meta name="author" content="Marido de Aluguel Maringá" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://maridomaringa.com.br/" />
+    <meta property="og:title" content="Marido de Aluguel Maringá | Consertos Profissionais" />
+    <meta property="og:description" content="Soluções rápidas e limpas para sua casa ou empresa em Maringá e região." />
+    <meta property="og:image" content="https://picsum.photos/id/192/1200/630" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Marido de Aluguel Maringá" />
+    <meta property="twitter:description" content="Serviços de reparos residenciais e comerciais com rapidez e confiança." />
+
+    <!-- Tailwind CDN (Aviso de produção é normal, mas garantimos o carregamento) -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
     <script>
       tailwind.config = {
         theme: {
@@ -29,23 +50,45 @@
         }
       }
     </script>
+    
     <style>
-      html { scroll-behavior: smooth; }
-      body { font-family: 'Noto Sans', sans-serif; background-color: #f8f8f5; }
+      /* Previne flash de conteúdo não estilizado e garante que o corpo seja visível */
+      html, body { 
+        scroll-behavior: smooth; 
+        background-color: #f8f8f5;
+        margin: 0;
+        padding: 0;
+        opacity: 1 !important;
+      }
+      body { font-family: 'Noto Sans', sans-serif; }
       h1, h2, h3, h4 { font-family: 'Spline Sans', sans-serif; }
+      
+      /* Oculta o aviso de desenvolvimento do Tailwind se necessário (opcional) */
+      .tailwindcss-details-tag { display: none !important; }
     </style>
-  <script type="importmap">
+
+    <script type="importmap">
 {
   "imports": {
-    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.460.0?external=react",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
   }
 }
 </script>
-</head>
+  </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Conteúdo básico para SEO enquanto o React carrega -->
+      <div style="display:none">
+        <h1>Marido de Aluguel Maringá</h1>
+        <p>Serviços de encanador, eletricista e montador de móveis em Maringá.</p>
+      </div>
+    </div>
+    <!-- Importação explícita do módulo principal -->
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
