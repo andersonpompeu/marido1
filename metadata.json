@@ -1,0 +1,7 @@
+{
+  "name": "Marido de Aluguel Maringá",
+  "description": "Uma landing page profissional para serviços de reparos residenciais e comerciais em Maringá, com design moderno e focado em conversão.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
